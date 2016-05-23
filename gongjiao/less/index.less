@@ -1,0 +1,188 @@
+.reset(){
+	html,body,div,h1,h2,h3,h4,h5,h6,span,i,ul,li {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		font-family: "宋体";
+	}
+	ul,ol {
+		list-style: none;
+	}
+}
+.bb(){
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.rel(){
+	position: relative;
+}
+.abs(){
+	position: absolute;
+}
+.pos-box-cc(@w:930px,@h:530px,@pos:absolute){
+	width: @w;
+	height: @h;
+	position: @pos;
+	left: 50%;
+	top: 50%;
+	margin-left: -@w/2;
+	margin-top: -@h/2;
+}
+.bgc(@c:#2c6e40){
+	background-color: @c;
+}
+.border(@w:1px,@c:#000){
+	border: @w solid @c;
+}
+.fl(){
+	float: left;
+}
+.clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.reset();
+
+div {
+	.bb();
+}
+.wrap {
+	.pos-box-cc();
+	.bgc();
+}
+
+.main {
+	width: 100%;
+	height: 400px;
+	margin-top: 52px;
+}
+
+.sect1 {
+	width: 30%;
+	height: 100%;
+	color: #fff;
+	.fl();
+	.bgc(#293742);
+	h3 {
+		font-size: 24px;
+		text-align: center;
+		font-weight: 500;
+		margin-top: 20px;
+	}
+	.station {
+		.num {
+			span {
+				display: inline-block;
+				width: 116px;
+				height: 116px;
+				.border(4px,#fff);
+				border-radius: 50%;
+				line-height: 116px;
+				text-align: center;
+				font-size: 80px;
+				font-weight: 900;
+				margin: 15px 0 0 60px;
+			}
+			i {
+				font-style: normal;
+				display: inline-block;
+				vertical-align: bottom;
+				font-size: 40px;
+				font-weight: 800;
+			}
+			.clearfix();
+		}
+		.stat-name {
+			font-size: 30px;
+			font-weight: 700;
+			letter-spacing: -5px;
+			margin-top: 20px;
+		}
+		.next-stat {
+			font-size: 25px;
+			font-weight: 700;
+			color: #c83022;
+			margin-left: 15px;
+			margin-top: 10px;
+		}
+	}
+	.time {
+		font-size: 20px;
+		font-weight: 700;
+		span {
+			display: block;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+	}
+}
+
+.sect2 {
+	width: 70%;
+	height: 100%;
+	.fl();
+}
+
+.sect2 {
+	.title {
+		height: 110px;
+		wdith: 100%;
+		.bgc(#fff);
+		.border(1px;#293126);
+		h1 {
+			font-size: 72px;
+			font-weight: 900;
+			line-height: 108px;
+			word-spacing: 50px;
+			letter-spacing: 50px;
+			margin-right: -50px;
+			text-align: center;
+			color: #263435;
+		}
+	}
+	.path {
+		width: 100%;
+		height: 290px;
+		.bgc(#8aa97f);
+		ul {
+			padding-left: 10px;
+			padding-right: 10px;
+			.clearfix();
+			li {
+				word-break: break-all;
+				font-size: 22px;
+				font-weight: 600;
+				color: #112107;
+				text-align: center;
+				width: 5%;
+				padding-top: 20px;
+				line-height: 22px;
+				.fl();
+				i {
+					font-style: normal;
+					display: block;
+					padding-bottom: 8px;
+				}
+				span {
+					display: block;
+					transform: rotate(90deg);
+				}
+				&.cur {
+					color: #a1422e;
+				}
+			}
+		}
+	}
+}

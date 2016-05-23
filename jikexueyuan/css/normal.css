@@ -1,0 +1,283 @@
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif
+}
+
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea {
+    font-size: 100%;
+    font-weight: 400
+}
+
+input {
+    font-size: 100%;
+    font-weight: 400
+}
+
+body {
+    background: #fff
+}
+
+address,
+cite,
+dfn,
+em,
+i,
+var {
+    font-style: normal
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: courier new, courier, monospace
+}
+
+small {
+    font-size: 12px
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+legend {
+    color: #000
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    outline: 0
+}
+
+iframe {
+    vertical-align: top
+}
+
+s {
+    text-decoration: none
+}
+
+button {
+    border: 0 none
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+video {
+    display: block
+}
+
+input {
+    outline: 0;
+    border: 0
+}
+
+img, input, label, select {
+    vertical-align: middle;
+}
+
+::selection {
+    background: #35b558;
+    color: #fff
+}
+
+::-moz-selection {
+    background: #35b558;
+    color: #fff
+}
+
+::-webkit-selection {
+    background: #35b558;
+    color: #fff
+}
+
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.cf {
+    zoom: 1;
+}
+
+.mar-t10 {
+    margin-top: 10px!important;
+}
+
+.mar-t20 {
+    margin-top: 20px!important;
+}
+
+.mar-t40 {
+    margin-top: 40px!important;
+}
+
+.mar-t50 {
+    margin-top: 50px!important;
+}
+
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/*pager---recommendName样式*/
+.hot-lesson ul {
+    height: 41px;
+    background: url(../images/hotnav_bc.jpg) 0 100% repeat-x;
+}
+
+.hot-lesson ul li {
+    width: 16.6%;
+    float: left;
+    text-align: center;
+    color: #666;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    /*line-height: 1;*/    /*让字体盒子按字体大小显示*/
+}
+
+.hot-lesson ul li:hover {
+    border-bottom: 2px solid #35b558;
+    color: #35b558;
+}
+
+.hot-lesson ul li.on {
+    border-bottom: 2px solid #35b558;
+    color: #35b558;
+    background: url(../images/index-sj.png) center bottom no-repeat;
+    background-size: 10px 4px;
+}
+
+.mar-b8 {
+    margin-bottom: 8px;
+}
+
+.greenbtn {
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    background: #35b558;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.greenbtn2 {
+    display: inline-block;
+    color: #35b558;
+    font-size: 16px;
+    background: #f3fff6;
+    border: 1px solid #35b558;
+    transition: background .8s, color .8s;
+    -webkit-transition: background .8s, color .8s;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.greenbtn:active,
+.greenbtn:focus,
+.greenbtn:hover {
+    background:#66d178;
+    color:#fff;
+}
+
+.f_l {
+    float: left;
+}

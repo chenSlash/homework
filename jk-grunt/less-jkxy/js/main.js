@@ -1,0 +1,1 @@
+require(['js/index.js', 'js/carousel.js', 'js/slideshow.js', 'js/slideshowsub.js', 'js/tagswitch.js', 'js/transition.js']);
