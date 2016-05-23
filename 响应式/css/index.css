@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*解决ie6最小高度和宽度问题*/
+    min-height: 600px;
+    _height: expression_r(this.scrollHeight < 600 ? “600px”: “auto”);
+    min-width: 810px;
+    _width: expression_r(document.body.clientWidth > 810 ? “810px”: “auto”);
+    height: 100%;
+    font-family: arial;
+    overflow: auto;
+    /*解决IE6,7显示滚动条的默认设置，使其只在需要时显示滚动条*/
+}
+
+body {
+    height: 100%;
+    font-size: 12px;
+}
+
+i {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: url(../image/icrlogo.png) -600px -96px no-repeat;
+    position: relative;
+    top: 3px;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 600px;
+    min-width: 810px;
+    overflow: hidden;
+}
+
+
+/*这是导航条样式*/
+
+#nav {
+    font-size: 13px;
+    width: 100%;
+    margin: 19px auto 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#topbar {
+    list-style-type: none;
+    text-align: right;
+    color: #333333;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+#topbar li {
+    display: inline;
+    margin-left: 18px;
+}
+
+#topbar a {
+    line-height: 24px;
+    color: #333333;
+}
+
+.nw {
+    font-weight: normal;
+}
+
+#topbar a:hover,
+#topbar a:active {
+    color: #1D21E1;
+}
+
+
+/*这是“更多产品”选项样式*/
+
+a#sidebar {
+    /*width: 60px;*/
+    background-color: #3388ff;
+    padding: 4px;
+    color: #fff;
+    border-bottom: 1px solid #3388ff;
+    text-decoration: none;
+}
+
+
+/*这是主体，logo和搜索框部分*/
+
+#main {
+    width: 100%;
+    height: 191px;
+    position: relative;
+    top: 38.2%;
+}
+
+#middle {
+    width: 100%;
+    height: 191px;
+    text-align: center;
+    position: relative;
+    top: -191px;
+}
+
+img {
+    width: 270px;
+    height: 129px;
+}
+
+form {
+    width: 639px;
+    margin: 22px auto 0;
+}
+
+
+/*设置输入框和按钮的样式*/
+
+input {
+    height: 34px;
+    width: 531px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #B5B3B3;
+    padding-left: 7px;
+    font: 16px/18px arial;
+    float: left;
+    line-height: 34px;
+    /*解决IE7对话框文本垂直方向默认顶部对齐，使之居中显示*/
+}
+
+input:hover {
+    border: 1px solid #898989;
+}
+
+input:focus {
+    border-color: #3385ff;
+}
+
+button {
+    width: 100px;
+    height: 36px;
+    background-color: #3385ff;
+    border-style: none;
+    float: left;
+    cursor: pointer;
+    margin-left: -1px;
+}
+
+button span {
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    box-shadow: 1px 1px 1px 0 #8F8F8F;
+    -webkit-box-shadow: 1px 1px 1px 0 #8F8F8F;
+    -moz-box-shadow: 1px 1px 1px 0 #8F8F8F;
+    background-color: #4066FD;
+    behavior: url(ie-css3.htc);
+    /*解决ie不支持css3*/
+}
+
+button:active {
+    background-color: #365EFC;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    behavior: url(ie-css3.htc);
+    /*解决ie不支持css3*/
+}
+
+
+/*这是页脚部分*/
+
+#footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 44px;
+}
+
+#ft-wrapper {
+    text-align: center;
+}
+
+
+/*设置二维码区的样式*/
+
+.qrcode-item-1 .qrcode-img {
+    width: 60px;
+    height: 60px;
+    background: url(../image/mobelbd.png) 0 0 no-repeat;
+    float: left;
+}
+
+.qrcode-item-2 .qrcode-img {
+    width: 60px;
+    height: 60px;
+    background: url(../image/nuomi.png) 0 0 no-repeat;
+    float: left;
+}
+
+.qrcode-text {
+    float: left;
+    height: 60px;
+    font-size: 12px;
+    color: #4c4c4c;
+    text-align: center;
+    line-height: 23px;
+    margin: 7px 30px 0 10px;
+}
+
+.qrcode-text span {
+    font-size: 12px;
+    color: #999;
+}
+
+.qrcode-item {
+    display: inline-block;
+    vertical-align: middle;
+    *display: inline;
+    /*解决IE6,7不支持block元素的display：inline-block*/
+    zoom: 1;
+}
+
+
+/*设置底部链接和版权文字*/
+
+#word {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 23px;
+    position: relative;
+    top: -4px;
+    *display: inline;
+    /*解决IE6,7不支持block元素的display：inline-block*/
+    zoom: 1;
+}
+
+
+/*设置底部链接样式*/
+
+#btmnav {
+    list-style-type: none;
+}
+
+#btmnav li {
+    display: inline;
+    margin-right: 16px;
+}
+
+#btmnav a {
+    color: #333333;
+}
+
+
+/*设置版权文字样式*/
+
+.db {
+    margin: 0 1px;
+}
+
+p#copyright {
+    color: #717171;
+}
+
+#copyright a:link,
+#copyright a:visited {
+    color: #717171;
+}
+
+#btmnav a:hover,
+#btmnav a:active {
+    color: #000000;
+}
+
+#wrap {
+    display: none;
+}
+
+/*媒体查询*/
+
+@media (max-width: 768px) {
+    #wrapper {
+        display: none;
+    }
+    #wrap {
+        display: block;
+    }
+}
