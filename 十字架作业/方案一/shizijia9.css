@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*设置十字架容器宽度高度，并设置一种方式居中*/
+#container {
+
+	height: 320px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	line-height: 100px;
+}
+
+/*设置9个块的大小，并浮动*/
+#wrapper div, #topbox, #bottombox {
+	width: 100px;
+	height: 100px;
+}
+
+#wrapper div {
+	float: left;
+}
+img {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 320px;
+	height: 100px;
+	margin: 10px auto;
+}
+/*给第2,456，8个块添加背景颜色，十字架基本成型*/
+#topbox {
+	background-color: #D5A506;
+	margin: auto;
+}
+#leftbox {
+	background-color: #D50613;
+}
+#centerbox {
+	background-color: #D8D8D8;
+	margin: 0 10px;
+}
+#rightbox {
+	background-color: #994004;
+}
+#bottombox {
+	background-color: #130CC4;
+	margin: auto;	
+}
+
+
+/*设置十字架块的阴影和圆角*/
+#topbox, #leftbox, #centerbox, #rightbox, #bottombox {
+	box-shadow: 5px 5px 5px #898989;
+	-webkit-box-shadow: 5px 5px 5px #898989;
+	-moz-box-shadow: 5px 5px 5px #898989;
+	border-radius: 17px;
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+}
+
+
+

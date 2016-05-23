@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*在十字架外设一个div容器，使其水平垂直均居中*/
+#container {
+	width: 324px;
+	height: 324px;
+	/*background-color: #78C64C;*/
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+/*给每个方块高度和宽度，并浮动*/
+.main {
+	width: 100px;
+	height: 100px;
+	position: absolute;	
+    border: 1px solid #797979;
+}
+
+/*为每个块添加背景颜色，设定位置*/
+#top-box {
+	background-color: #D5A506;
+	left: 112px;
+    top: 3px;
+}
+#right-box {
+	background-color: #D50613;
+	right: 3px;
+	top: 112px;
+}
+#bottom-box {
+	background-color: #990497;
+	left: 112px;
+	bottom: 3px;
+}
+#left-box {
+	background-color: #994004;
+	left: 3px;
+	top: 112px;
+}
+#center-box {
+	background-color: #E4E4E4;
+	left: 112px;
+	top: 112px;
+	line-height: 100px;   /*设置行高与其高度相等使图像垂直居中*/
+	text-align: center;   /*图像水平居中*/
+}
+
+/*为每个块设定圆角和阴影*/
+#top-box,#right-box, #bottom-box, #left-box, #center-box {
+	box-shadow: -4px 0px 3px #484545 inset;
+	-webkit-box-shadow: -4px 0px 3px #484545 inset;
+	-moz-box-shadow: -4px 0px 3px #484545 inset;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+}
+
