@@ -1,0 +1,77 @@
+body {
+	background-color: #0066A8;
+    font-size: 12px;
+}
+
+.logo {
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+
+.logo-page {
+	width: 600px;
+	height: 250px;
+	background-color: #fff;
+	margin: auto;
+}
+
+.lp_img {
+	float: left;
+	padding: 40px 30px;
+    
+}
+
+.lp_inp {
+	width: 220px;
+	float: left;
+	padding-top: 40px;
+}
+
+.btn {
+	background-color: #40454b;
+	color: #fff;
+	font-weight: 600px;
+}
+
+
+.btn:link, .btn:visited {
+	color: #fff;
+}
+
+.btn:hover, .btn:active {
+    background-color: #333333;
+    color: #fff;
+}
+
+
+
+.copyright {
+	clear: both;
+	text-align: center;
+	color: #fff;
+	padding-top: 20px;
+}
+
+
+
+/*下面是中部的另一种居中方式，这种居中方式需要注意一点：
+             由于本文件采用的是bootstrap3, bootstrap3的最大改动就是移动优先，
+             所以他设置了*{box-sizing：border-box;},“应用所有”相当暴力。
+             而bootsrap2不是应用于所有。
+
+*/
+
+
+
+/*需要把html中的div.lp_img及其内容删掉，
+中部只要表单，图片通过加背景图片的方式加入*/
+/*.lp_inp {
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	width: 220px;
+    background: #fff url(img/truck.jpg) no-repeat 30px 40px;
+    padding: 40px 50px 40px 330px;
+    margin: auto;
+}*/
