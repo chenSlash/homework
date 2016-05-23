@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#wrap {
+	margin: 0 auto;
+	position: relative;
+}
+
+.box {
+	background: #fff;
+	padding: 8px;
+	float: left;
+	transition: all .7s ease-out .1s;
+	-webkit-transition: all .7s ease-out .1s;
+	-moz-transition: all .7s ease-out .1s;
+	-o-transition: all .7s ease-out .1s;
+	position: absolute;
+	left: 50%;
+	top: 70px;
+	margin-left: -119px;
+}
+
+.pic {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.pic img {
+	width: 200px;
+	height: auto;
+}
+

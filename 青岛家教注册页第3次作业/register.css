@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*设置网页的背景颜色*/
+
+body {
+    background-color: #0d7792;
+    line-height: 150%;
+    color: #2A2A2A;
+    font-size: 12px;
+}
+
+
+/*设置网页主体的背景颜色，宽度，居中，圆角*/
+
+#container {
+    width: 710px;
+    margin: 10px auto 20px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+
+/*设置页眉中的图片和导航位置*/
+
+nav {
+    float: right;
+    margin-top: 64px;
+}
+
+nav a:link,
+nav a:visited {
+    color: #FD4391;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    color: #DF0762;
+}
+
+
+/*设置页眉，正文，页脚的宽度浮动*/
+
+header {
+    float: left;
+    width: 640px;
+    margin: 5px 30px;
+}
+
+#return:link,
+#return:visited {
+    color: #071BCD;
+}
+
+#return:hover,
+#return:active {
+    color: #E40106;
+}
+
+article {
+    float: left;
+    width: 710px;
+}
+
+footer {
+    clear: both;
+    width: 640px;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px 0 50px;
+}
+
+
+/*设置表格，合并单元格，居中*/
+
+table {
+    width: 640px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+caption {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    color: #333333;
+}
+
+td {
+    border: 1px solid #CFCDCD;
+    padding: 5px;
+}
+
+
+/*设置小标题样式*/
+
+.subhead {
+    background-color: #E0E0E0;
+    color: #140464;
+    font-weight: 600;
+    letter-spacing: 0.6em;
+    padding-left: 20px;
+}
+
+
+/*设置第一列的宽度，文本右对齐*/
+
+.fr {
+    text-align: right;
+    width: 130px;
+}
+
+
+/*设置红色显示的文本*/
+
+.redword {
+    color: #E40106;
+}
+
+
+/*设置蓝色显示的文本*/
+
+.blueword {
+    color: #071BCD;
+}
+
+
+/*设置提交栏的高度，内容居中*/
+
+#submitbutton {
+    height: 80px;
+    text-align: center;
+}
+
+
+/*调整内容的大小，间距，位置*/
+
+input {
+    margin-left: 8px;
+}
+
+strong {
+    display: inline-block;
+    margin: 30px 0 3px 0;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+}
+
+
+/*设置输入框的大小*/
+
+input[type=text],
+input[type=idcard],
+input[type=date],
+input[type=tel],
+input[type=email] {
+    width: 170px;
+    height: 20px;
+    margin: 5px;
+}
+
+
+/*设置选择框的大小*/
+
+select {
+    width: 174px;
+    height: 25px;
+    margin: 5px;
+}
+
+input[type=submit] {
+    width: 80px;
+    height: 40px;
+    background-color: #08757A;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer span {
+    color: #4C4C4C;
+}

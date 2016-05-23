@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>面向对象编程</title>
+	<script>
+		// 面向对象编程
+		function people(color,style){
+		this.eye=color;
+		this.hair=style;
+		}
+		people.prototype.single=function(){
+			alert(this.eye+this.hair);
+		}
+		var p= new people('眼睛','头发');
+		function chinese(color,style){
+		people.call(this,color,style)
+		}
+		chinese.prototype=Object.create(people.prototype);
+		chinese.prototype.use="筷子";
+		var c= new chinese('黑色','直发');
+		chinese.prototype.single=function(){
+			alert('中国人有'+this.eye+'眼睛和'+this.hair)
+		}
+		console.log(c);
+		console.log(p);
+		c.single();
+		p.single();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
