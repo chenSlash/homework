@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*这是页眉*/
+
+#header {
+    height: 50px;
+    background-color: #EC3434;
+}
+
+#article {
+    width: 100%;
+    background-color: #3486EC;
+    overflow: hidden;
+    position:absolute;
+    top: 50px;
+    left: 0;
+    bottom: 50px;
+}
+
+
+/*这是页脚*/
+
+#footer {
+    height: 50px;
+    width: 100%;
+    background-color: #BAEC34;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#main {
+    width: 100%;
+    background-color: #34EC91;
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*这是主体内容*/
+
+#inner {
+    margin: 0 150px;
+}
+
+
+/*这是左边栏*/
+
+#left {
+    width: 150px;
+    margin-left: -100%;
+    background-color: #9320D8;
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*这是右边栏*/
+
+#right {
+    width: 150px;
+    margin-left: -150px;
+    background-color: #577D04;
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
