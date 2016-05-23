@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8" />
+	<title>立方体动画</title>
+</head>
+	<style type="text/css">
+
+	@keyframes rotate {
+        0% {
+        	transform: rotateX(0deg) rotateY(0deg);
+        }
+        100% {
+        	transform: rotateX(360deg) rotateY(360deg);
+        }
+	}
+
+	html {
+		background: linear-gradient(#000 0%, #26922F 100%);
+		height: 100%;
+	}
+	#wrap {
+		margin-top: 200px;
+		perspective: 1000px;
+	}
+
+    #cube {
+	    width: 200px;
+		height: 200px;
+		margin: auto;
+		position: relative;
+		transform-style: preserve-3d;
+		animation: rotate 5s infinite linear;
+    }
+
+    #cube div {
+    	width: 100%;
+    	height: 100%;
+    	font-size: 36px;
+		font-weight: bolder;
+		font-family: "microsoft yahei";
+        text-align: center;
+        line-height: 200px;
+    	border: 1px solid #fff;
+    	background-color: #333;
+    	color: #fff;
+    	opacity: .7;
+    	position: absolute;
+    	transition: transform .3s ease-in;
+    }
+
+    #cube span {
+    	display: block;
+    	width: 100px;
+    	height: 100px;
+    	position: absolute;
+    	top: 50px;
+    	left: 50px;
+    	background-color: #999;
+    	border: 1px solid #fff;
+    }
+
+  
+    #out-front {
+    	transform: translateZ(100px);
+    }
+    #out-back {
+    	transform: translateZ(-100px) rotateY(180deg);
+    }
+    #out-left {
+    	transform: rotateY(90deg) translateZ(100px);
+    }
+    #out-right {
+    	transform: rotateY(-90deg) translateZ(100px);
+    }
+    #out-top {
+    	transform: rotateX(90deg) translateZ(100px);
+    }
+    #out-bottom {
+    	transform: rotateX(-90deg) translateZ(100px);
+    }
+
+
+    #in-front {
+    	transform: translateZ(50px);
+    }
+    #in-back {
+    	transform: translateZ(-50px) rotateY(180deg);
+    }
+    #in-left {
+    	transform: rotateY(90deg) translateZ(50px);
+    }
+    #in-right {
+    	transform: rotateY(-90deg) translateZ(50px);
+    }
+    #in-top {
+    	transform: rotateX(90deg) translateZ(50px);
+    }
+    #in-bottom {
+    	transform: rotateX(-90deg) translateZ(50px);
+    }
+
+
+    #cube:hover #out-front {
+    	transform: translateZ(200px);
+    }
+    #cube:hover #out-back {
+    	transform: translateZ(-200px) rotateY(180deg);
+    }
+    #cube:hover #out-left {
+    	transform: rotateY(90deg) translateZ(200px);
+    }
+    #cube:hover #out-right {
+    	transform: rotateY(-90deg) translateZ(200px);
+    }
+    #cube:hover #out-top {
+    	transform: rotateX(90deg) translateZ(200px);
+    }
+    #cube:hover #out-bottom {
+    	transform: rotateX(-90deg) translateZ(200px);
+    }
+	</style>
+<body>
+    <div id="wrap">
+    <div id="cube">
+    	<div id="out-top">上面</div>
+    	<div id="out-bottom">下面</div>
+    	<div id="out-left">左面</div>
+    	<div id="out-right">右面</div>
+    	<div id="out-front">前面</div>
+    	<div id="out-back">后面</div>
+
+    	<span id="in-top"></span>
+    	<span id="in-bottom"></span>
+    	<span id="in-left"></span>
+    	<span id="in-right"></span>
+    	<span id="in-front"></span>
+    	<span id="in-back"></span>
+    </div>
+    </div>
+</body>
+</html>

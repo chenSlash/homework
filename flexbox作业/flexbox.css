@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+
+/*为body添加一个背景颜色*/
+
+body {
+    background-color: #ECE9E9;
+}
+
+
+/*设置页眉的大小，样式，包括logo和登录注册的调整*/
+
+header {
+    width: 100%;
+    height: 40px;
+    margin: 5px auto 0;
+    background-color: #000;
+    line-height: 40px;
+}
+
+#logo {
+    vertical-align: middle;
+    margin-left: 10%;
+}
+
+#nav-network {
+    list-style: none;
+    text-decoration: none;
+    float: right;
+    margin-right: 10%;
+}
+
+#nav-network li {
+    display: inline;
+    line-height: 40px;
+}
+
+#nav-network li a {
+    padding: 10px;
+    border-left: 1px solid #C0C0C0;
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+#nav-network a:hover,
+#nav-network a:active {
+    color: #fff;
+}
+
+
+/*设置主体部分的宽度，背景颜色，并居中显示 。应用flexbox纵向排列*/
+
+#main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+/*设置banner的背景图像*/
+
+#banner {
+    height: 180px;
+    margin-bottom: 20px;
+    background: url(picture/bgimg.jpg) no-repeat;
+    background-size: 1000px 180px;
+    order: 0;
+    -wetkit-order: 0;
+}
+
+
+/*设置nav样式，应用flexbox横向排列，媒体查询*/
+
+#nav {
+    width: 100%;
+    list-style: none;
+    order: 1;
+    -wetkit-order: 1;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+
+/*媒体查询这个有问题：当我给每个导航选项的左右两边加margin值时，
+媒体查询的第一部分（分成两行）不起作用了，为什么？*/
+
+#nav li {
+    margin: 2px 2px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 0 5px 0 #757675;
+    background-color: #F7F7F7;
+    flex: 1 1 100%;
+    -webkit-flex: 1 1 100%;
+}
+
+#nav li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#nav li a:hover,
+#nav li a:active {
+    background-color: #DEDEDE;
+    font-size: 16px;
+}
+
+@media (min-width: 480px) {
+    #nav li {
+        flex: 1 1 48%;
+        -webkit-flex: 1 1 48%;
+    }
+}
+
+@media (min-width: 768px) {
+    #nav {
+        flex-flow: row nowrap;
+        -webkit-flex-flow: row nowrap;
+    }
+}
+
+
+/*设置图片部分的排序*/
+
+#pic-section {
+    order: 2;
+    -wetkit-order: 2;
+}
+
+
+/*设置两个小标题“景色无处不在”，“诗意的生活”的样式*/
+
+.subtitle p {
+    width: 60%;
+    font-size: 2em;
+    text-align: center;
+    margin: 40px auto 60px;
+    border-bottom: 1px dotted #6E6E6E;
+}
+
+
+/*设置图片区域应用flexbox横向排列，以及每张图片的显示样式*/
+
+#picture {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+#picture div {
+    border: 5px solid #fff;
+    margin: 7px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #9C9C9C;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+}
+
+
+/*为文字区设置排序*/
+
+#word-section {
+    order: 2;
+    -wetkit-order: 2;
+}
+
+
+/*文章部分应用column属性自动分栏*/
+
+#article {
+    margin: 20px;
+    line-height: 1.5em;
+    /*-webkit-column-count: 4;*/
+    -webkit-column-rule-style: dotted;
+    -webkit-column-rule-width: 1px;
+    -webkit-column-width: 200px;
+    -webkit-column-gap: 2em;
+}
+
+#article h5,
+#article h6 {
+    text-align: center;
+    letter-spacing: .5em;
+}
+
+#article p {
+    text-indent: 2em;
+    background-color: #fff;
+}
+
+
+/*设置页脚样式*/
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+}
+
+footer ul {
+    list-sytle: none;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+    border-left: 1px solid #fff;
+    padding: 0 10px;
+}
+
+
+/*设置盒子图形区域，同时应用flexbox的旧版和新版*/
+/*实现了居中对齐，考虑了浏览器的兼容*/
+
+#weird {
+    width: 100%;
+    margin: 50px auto;
+    order: 3;
+    -wetkit-order: 3;
+    /*下面是旧版flexbox定义方式*/
+    display: -webkit-box;
+    display: moz-box;
+    display: ms-box;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-box-pack: justify;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    /*下面是新版flexbox定义方式*/
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+
+/*美化盒子图形，易于普通盒子模型和怪异盒子模型的对比*/
+
+.wrap {
+    box-shadow: 0 0 20px 0 #171717;
+    margin: 10px 2px;
+    padding: 10px;
+    border: 10px solid #5E5E5E;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: #CDDED1;
+    text-align: center;
+    color: #000;
+}
+
+
+/*前面3个应用border-box怪异盒子*/
+/*border-box的宽度和高度=content+padding+border*/
+
+.wrap:nth-child(1) {
+    box-sizing: border-box;
+    width: 140px;
+    height: 140px;
+}
+
+.wrap:nth-child(2) {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+}
+
+.wrap:nth-child(3) {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+}
+
+
+/*后面3个是普通盒子content-box*/
+/*content-box的宽度和高度=content*/
+/*1和6,2和5,3和4，的盒子大小相同，在padding和border值相同情况下，
+需要设置不同的宽度和高度以达到盒子大小相同*/
+
+.wrap:nth-child(4) {
+    width: 20px;
+    height: 20px;
+}
+
+.wrap:nth-child(5) {
+    width: 60px;
+    height: 60px;
+}
+
+.wrap:nth-child(6) {
+    width: 100px;
+    height: 100px;
+}
